@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+
+.frame{
+	background: black url("savedself.jpg");
+	height:640px;
+	width:1000px;
+	position:relative;
+	margin: 0px auto;
+}
+
+body{
+	font-family: 'minecraft';
+	color:white;
+	background: black;
+	
+}
+
+a{
+	text-decoration: none;
+	color: #f6eb14;
+	filter: drop-shadow(3px 3px 0px #3f3f00);
+
+}
+
+h1{
+	position:absolute;
+	top:40px;
+	left:50px;
+	font-size:40px;
+	filter: drop-shadow(4px 4px 1px black);
+		-webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+	transform: rotate(-5deg) ;
+
+}
+
+p{
+	position:absolute;
+	top:100px;
+	left:200px;
+	font-size:35px;
+	filter: drop-shadow(4px 4px 1px black);
+	opacity: 0;
+	 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+}
+
+
+.nowwhat{
+	position:absolute;
+	top:280px;
+	left:700px;
+		-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+	transform: rotate(5deg) ;
+
+}
+
+.up{
+	position: absolute;
+	top:500px;
+	left:160px;
+	font-size: 35px;
+	
+	
+}
+
+.down{
+	position:absolute;
+	top:500px;
+	left:630px;
+	font-size: 35px;
+}
+
+a{
+		opacity: 0;
+		 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+	color: #f6eb14;
+	filter: drop-shadow(3px 3px 0px #3f3f00);
+}
+
+a:hover{
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+	transition: 1s;
+}

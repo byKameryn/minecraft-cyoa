@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+a, a img, img, a:visited {
+  outline : none;
+  border : 0;
+  text-decoration: none;
+}
+
+body {
+	background: black;
+	font-family: 'minecraft';
+	color:white;
+	
+}
+
+h1{
+	filter: drop-shadow(2px 3px 1px black);
+	position:absolute;
+	top:-20px;
+	left:50px;
+	font-size:100px;
+	-webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+	transform: rotate(-10deg) ;
+	
+}
+
+p{
+	filter: drop-shadow(0px 2px 2px black);
+	position:absolute;
+	top:180px;
+	left:60px;
+}
+
+.frame {
+	background: black url("ending.jpg");
+	width: 1000px;
+	height: 640px;
+	margin: 0px auto;
+	position: relative;
+}
+
+a{
+	color: #f6eb14;
+	filter: drop-shadow(3px 3px 0px #3f3f00);
+	position:absolute;
+	top:500px;
+	left:650px;
+	font-size:45px;
+	opacity:0;
+	-webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+	transform: rotate(3deg);
+		 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+		
+	
+}
+a:hover{
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+	transition: 1s;
+}
+
+.one{
+	position:absolute;
+	top:210px;
+	
+}
+
+.two{
+	position:absolute;
+	top:240px;
+}
+.three{
+	position:absolute;
+	top:260px;
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+
+.frame{
+	background: black url("diamonds.jpg");
+	height: 640px;
+	width: 1000px;
+	margin: 0px auto;
+	position: relative;
+}
+
+body{
+	font-family: 'minecraft';
+	color:white;
+	filter: drop-shadow(2px 3px 2px black);
+	background: black;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+    filter: drop-shadow(2px 3px 2px black);
+}
+
+p{
+	filter: drop-shadow(2px 3px 2px black);
+	position: absolute;
+	top:50px;
+	left: 60px;
+	font-size: 35px;
+	-webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+	transform: rotate(-5deg) ;
+}
+
+.diamonds{
+	position:absolute;
+	top:150px;
+	left:650px;
+		-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+	transform: rotate(5deg);
+	opacity: 0;
+	 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+}
+
+.lava{
+	position:absolute;
+	top:450px;
+	left:100px;
+	font-size:35px;
+}
+
+.mineshaft{
+	position:absolute;
+	top:450px;
+	left:530px;
+	font-size:35px;
+}
+
+a:hover{
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+	transition: 1s;
+}
+
+a{
+	opacity: 0;
+	 	 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+	color: #f6eb14;
+	filter: drop-shadow(4px 4px 3px black);
+}

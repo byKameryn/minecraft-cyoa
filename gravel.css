@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: black;
+	color: white;
+	font-family: 'minecraft';
+}
+
+.frame {
+	background: black url("gravel.jpg");
+	width: 1000px;
+	height: 640px;
+	margin: 0px auto;
+	position: relative;
+}
+
+h1{
+	position: absolute;
+	top:20px;
+	left: 40px;
+	font-size: 40px;
+	filter: drop-shadow(2px 3px 2px black);
+	-webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+	transform: rotate(-2deg) ;
+}
+
+p{
+	position: absolute;
+	top:500px;
+	left:460px;
+	font-size:20px;
+	filter: drop-shadow(2px 3px 2px black);
+	-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+	transform: rotate(2deg) ;
+}
+
+.respawn{
+	position:absolute;
+	background: url(respawn.png);
+	width:470px;
+	height: 57px;
+	top:353px;
+	left:275px;
+}
+
+a:hover{
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+	transition: 1s;
+}

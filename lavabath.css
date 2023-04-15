@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, a img, img, a:visited {
+  outline : none;
+  border : 0;
+  text-decoration: none;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+.waterbucket{
+	background: url("waterbucket.png");
+	height: 56px;
+	width: 45px;
+	position: absolute;
+	opacity:1;
+	top:562px;
+	left:738px;
+	
+	
+}
+
+body{
+	background:black;
+}
+
+a:hover{
+	opacity:1;
+	-webkit-transform: scale(1.5);
+    transform: scale(1.5); 
+	transition: 1s;
+
+}
+
+.frame{
+	position:relative;
+	margin: 0px auto;
+	height:640px;
+	width:1000px;
+	background: black url("lavabath.jpg");
+	font-family: 'minecraft';
+	color:white;
+	font-size:18px;
+	
+}
+
+h1{
+	position:absolute;
+	top:20px;
+	left:40px;
+	filter: drop-shadow(4px 4px 1px black);
+}
+
+P{
+	position:absolute;
+	top:450px;
+	left:620px;
+	filter: drop-shadow(4px 4px 1px black);
+}

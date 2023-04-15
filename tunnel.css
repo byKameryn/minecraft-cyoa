@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+body{
+	font-family:'minecraft';
+	color:white;
+	font-size:30px;
+	background: black;
+}
+.frame{
+	background: black url("tunnel.jpg");
+	height: 640px;
+	width: 1000px;
+	margin: 0px auto;
+	position: relative;
+}
+
+h1{
+	position:absolute;
+	top:30px;
+	left:60px;
+	font-size:40px;
+	filter: drop-shadow(4px 4px 1px black);
+}
+
+p{
+	position: absolute;
+	top:300px;
+	left:330px;
+	-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+	transform: rotate(-3deg);
+		filter: drop-shadow(4px 4px 1px black);
+	opacity: 0;
+	 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+}
+
+
+.diamonds{
+	position:absolute;
+	top:500px;
+	left:140px;
+}
+
+
+.torch{
+	position:absolute;
+	top:500px;
+	left:700px;
+}
+
+a{
+color: #f6eb14;
+	filter: drop-shadow(3px 3px 0px #3f3f00);
+	text-decoration: none;
+	opacity: 0;
+	 	 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+}
+
+a:hover{
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+	transition: 1s;
+}

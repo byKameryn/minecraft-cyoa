@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+a, a img, img, a:visited {
+  outline : none;
+  border : 0;
+  text-decoration: none;
+}
+
+body {
+	background: black;
+	font-family: 'minecraft';
+	color:#f6eb14;
+}
+
+h1{
+	position: absolute;
+	top:80px;
+	left:615px;
+	font-size: 43px;
+	-webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+	transform: rotate(-20deg) ;
+	filter: drop-shadow(6px 6px 0px #3f3f00);
+	opacity:0;
+	 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
+        animation: fadeIn 2s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode:forwards; 
+	    animation-fill-mode:forwards;
+		
+}
+
+.frame {
+	background: black url("titlescreen.jpg");
+	width: 1000px;
+	height: 640px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.singleplayer{
+	background: url("singleplayer.png");
+	width: 427px;
+	height: 50px;
+	margin: 0px auto;
+	position: absolute;
+	top: 272px;
+	left: 290px;
+	-webkit-transform: scale(1.03);
+    transform: scale(1.03); 
+}
+
+.multiplayer{
+	background: url("multiplayer.png");
+	width: 425px;
+	height: 50px;
+	margin: 0px auto;
+	position: absolute;
+	top: 330px;
+	left: 283px; 
+}
+
+.quit{
+	background: url("quit.png");
+	width: 205px;
+	height: 50px;
+	margin: 0px auto;
+	position: absolute;
+	top: 471px;
+	left: 505px; 
+}
+a:hover{
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+	transition: 1s;
+}
