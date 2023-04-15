@@ -71,8 +71,6 @@ a{
 	left: 150px;
 	font-size: 30px;
 	opacity:0;
-		-webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
-	transform: rotate(3deg);
 		 -webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
         animation: fadeIn 2s;
         -webkit-animation-delay: 3s;
@@ -89,8 +87,8 @@ a{
 	opacity:0;
 	-webkit-animation: fadeIn 2s; /* Chrome, Safari, Opera */
         animation: fadeIn 2s;
-        -webkit-animation-delay: 5s;
-        animation-delay: 5s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
         -webkit-animation-fill-mode:forwards; 
 	    animation-fill-mode:forwards;
 }
